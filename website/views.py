@@ -31,4 +31,9 @@ def blog(request):
 	return render(request,'blog.html',{})
 
 def blog_details(request):
-	return render(request,'blog_details.html',{})
+	if request.method=="POST":
+		search=request.POST['search']
+		return render(request,'https://www.google.com',{'search':search})
+	else:
+
+		return render(request,'blog_details.html',{})

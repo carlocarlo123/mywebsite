@@ -1,4 +1,4 @@
-{% static load %}
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Dento - Dentist &amp; Medical HTML Template</title>
+  <title>Blog Details</title>
 
   <!-- Favicon -->
   <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
@@ -115,7 +115,7 @@
                   <li><a href="#">Blog</a>
                     <ul class="dropdown">
                       <li><a href="blog.html">- Blog</a></li>
-                      <li><a href="blog-details.html">- Blog Details</a></li>
+                      <li><a href="blog_details.html">- Blog Details</a></li>
                     </ul>
                   </li>
                   <li><a href="./contact.html">Contact</a></li>
@@ -165,7 +165,7 @@
       <div class="row">
         <div class="col-12 col-lg-8 mb-100">
           <!-- Blog Details Area -->
-          <div class="blog-details-area">
+          <div class="blog_details-area">
             <img src="{% static 'website/img/bg-img/24.jpg' %}" alt="">
 
             <h2 class="post-title">How your mouth bacteria can harm lungs</h2>
@@ -296,9 +296,10 @@
 
             <!-- Single Widget Area -->
             <div class="single-widget-area search-widget">
-              <form action="#" method="post">
+              <form action="https://google.com" method="POST">
                 <input type="search" name="search" class="form-control" placeholder="Search ...">
                 <button type="submit"><i class="icon_search"></i></button>
+                
               </form>
             </div>
 
